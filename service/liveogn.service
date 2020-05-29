@@ -7,7 +7,7 @@ User=liveogn
 Group=www-data
 RuntimeDirectory=liveogn
 WorkingDirectory=/srv/www/liveogn.freeflight.org.uk/liveogn/liveogn
-ExecStart=/srv/www/liveogn.freeflight.org.uk/liveognvenv/bin/python liveogn.py /var/liveogn/liveogn.db
+ExecStart=/srv/www/liveogn.freeflight.org.uk/liveogn/venv/bin/python liveogn.py /var/liveogn/liveogn.db
 
 [Install]
 WantedBy=multi-user.target
