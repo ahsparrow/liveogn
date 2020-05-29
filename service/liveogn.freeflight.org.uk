@@ -1,0 +1,9 @@
+server {
+    listen 80;
+    server_name liveogn.freeflight.org.uk;
+
+    location / {
+        include uwsgi_params;
+        uwsgi_pass unix:/run/liveogn/uwsgi.sock;
+    }
+}
