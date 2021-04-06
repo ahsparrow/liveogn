@@ -6,9 +6,9 @@ After=network.target
 User=liveogn
 Group=www-data
 RuntimeDirectory=liveogn
-WorkingDirectory=/srv/www/liveogn.freeflight.org.uk/liveogn
-Environment="LIVEOGN_SETTINGS=/srv/www/liveogn.freeflight.org.uk/liveogn/liveogn.ini"
-ExecStart=/srv/www/liveogn.freeflight.org.uk/liveogn/venv/bin/uwsgi --ini uwsgi.ini --virtualenv=/srv/www/liveogn.freeflight.org.uk/liveogn/venv
+WorkingDirectory=/var/www/liveogn.freeflight.org.uk/liveogn
+Environment="LIVEOGN_SETTINGS=/var/www/liveogn.freeflight.org.uk/liveogn/liveogn.ini"
+ExecStart=/var/www/liveogn.freeflight.org.uk/liveogn/venv/bin/uwsgi --ini uwsgi.ini --virtualenv=/var/www/liveogn.freeflight.org.uk/liveogn/venv
 
 [Install]
 WantedBy=multi-user.target
